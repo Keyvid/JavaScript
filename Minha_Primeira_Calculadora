@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Minha primeira calculadora</h1>
+</body>
+    <script type="text/javascript">
+        var numero1 = prompt("Digite o primeiro número: ");
+        var numero2 = prompt("Digite o sedundo número: ")
+        var operacao = prompt("Digite qual operação deseja fazer:  (+, -, * ou /)");
+
+        var resultadoOperacao = realizaOperacao(numero1, numero2, operacao);
+
+        alert("O resultado da operação é igual a: " + resultadoOperacao);
+        function realizaOperacao(numero1, numero2, op){
+            var resultado = 0 
+            resultado = eval(numero1 + op + numero2);
+            
+            return resultado
+        }
+    </script>
+</html>
